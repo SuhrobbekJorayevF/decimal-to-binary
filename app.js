@@ -154,7 +154,7 @@ numberGenerator.addEventListener("click", () => {
       break;
 
     case "1":
-      n = Math.floor(Math.random() * 9) + 2;
+      n = Math.floor(Math.random() * 9) + 1;
       break;
 
     case "2":
