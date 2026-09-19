@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1>Decimal to Binary</h1>
+        <p>Use the up and down buttons to build the binary number</p>
+        <p>Generate a number and try to match it</p>
+        <div class="container_generator">
+          <button class="generate_button">Generate</button>
+          <span class="generated_number"
+            >Generated number: <span class="generated_n"></span>
+          </span>
+          <span class="not_generated">
+            You haven't generated number
+          </span>
+        </div>
+      </div>
+      <div class="container_cards">
+        <!-- cards -->
+      </div>
+      <div class="result">
+        <div class="text">
+          <p>Result: <span class="result_txt">0</span></p>
+        </div>
+        <div class="difficulty_range">
+          <label for="range_unset">
+            <input type="radio" name="range" value="unset" checked>
+            Unset
+          </label>
+          <label>
+            <input type="radio" name="range" value="1">
+            1 digit
+          </label>
+          <label>
+            <input type="radio" name="range" value="2">
+            2 digits
+          </label>
+          <label>
+            <input type="radio" name="range" value="3">
+            3 digits
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="success_modal">
+      <div class="container_modal">
+        <div class="congrats_text">
+          <p>Congratulations 🎉🎉🎉</p>
+          <p>You found the number: <span class="result_modal">0</span></p>
+        </div>
+        <button class="modal_continue">Continue</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
